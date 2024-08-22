@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Product.page-style.css">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-gallery">
+            <img src="img/Screenshot_2024-07-13-09-15-55-597_com.meesho.supply.jpg" alt="Product Photo 1" class="product-photo" onclick="showPhoto(this.src)"> 
+            <img src="img/Screenshot_2024-07-15-09-14-30-389_com.meesho.supply.jpg" alt="Product Photo 2" class="product-photo" onclick="showPhoto(this.src)">
+            <img src="img/Screenshot_2024-07-15-11-13-31-595_com.meesho.supply.jpg" alt="Product Photo 3" class="product-photo" onclick="showPhoto(this.src)">
+            <img src="img/Screenshot_2024-07-15-11-14-14-523_com.meesho.supply.jpg" alt="Product Photo 4" class="product-photo" onclick="showPhoto(this.src)">
+            <img src="img/Screenshot_2024-07-14-16-04-58-191_com.flipkart.android.jpg" alt="Product Photo 5" class="product-photo" onclick="showPhoto(this.src)">
+            <!-- Add more photos as needed -->
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">WESTERN DRESS</h1>
+            <p class="product-description">FOR INDIAN PEOPLE'S</p>
+            <p class="product-price">CLICK CHECK OUT FOR SEE MORE</p>
+            <div id="CHECK OUT"><a href="accessories.html"> <button class="buy-button">CHECK OUT</button> </a> </div>
+        </div>
+    </div>
+
+    <div id="photo-modal" class="photo-modal">
+        <span class="close" onclick="closePhoto()">&times;</span>
+        <img class="modal-content" id="modal-photo">
+    </div>
+
+    <script>
+        function showPhoto(src)  {
+            var modal = document.getElementById("photo-modal");
+            var modalImg = document.getElementById("modal-photo");
+            modal.style.display = "block";
+            modalImg.src = src;
+            
+        }
+
+        function closePhoto() {
+            var modal = document.getElementById("photo-modal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-gallery">
+            <img src="img/IMG_20240721_094126.jpg" alt="Product Photo 1" class="product-photo" onclick="showPhoto(this.src)">
+            <img src="img/IMG_20240804_211131.jpg" alt="Product Photo 2" class="product-photo" onclick="showPhoto(this.src)">
+            <img src="img/Screenshot_2024-07-13-14-59-06-549_com.instagram.android.jpg" alt="Product Photo 3" class="product-photo" onclick="showPhoto(this.src)">
+            <img src="img/Screenshot_2024-07-28-21-37-23-485_com.meesho.supply.jpg" alt="Product Photo 4" class="product-photo" onclick="showPhoto(this.src)">
+            <img src= "img/Yellow Oversized 1.jpg" alt="Product Photo 5" class="product-photo" onclick="showPhoto(this.src)">
+            <!-- Add more photos as needed -->
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">BOY'Z </h1>
+            <p class="product-description">MEN ARE BRAVE</p>
+            <p class="product-price">CLICK CHECK OUT FOR SEE MORE</p>
+            <div id="CHECK OUT"><a href="CLOTHING.html"> <button class="buy-button">CHECK OUT</button> </a> </div>
+        </div>
+    </div>
+
+    <div id="photo-modal" class="photo-modal">
+        <span class="close" onclick="closePhoto()">&times;</span>
+        <img class="modal-content" id="modal-photo">
+    </div>
+    
+
+    <script>
+        function showPhoto(src) {
+            var modal = document.getElementById("photo-modal");
+            var modalImg = document.getElementById("modal-photo");
+            modal.style.display = "block";
+            modalImg.src = src;
+        }
+
+        function closePhoto() {
+            var modal = document.getElementById("photo-modal");
+            modal.style.display = "none";
+        }
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
